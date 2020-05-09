@@ -16,8 +16,8 @@ colo monokai
 
 imap jj <Esc>
 imap yy <Esc>:%y+<CR>
-imap ff <Esc>:s/^/\/\/ /<Enter><S-a>
-imap FF <Esc>:s/^\/\/ //<Enter><S-a>
+imap cc <Esc>:s/^/\/\/ /<Enter><S-a>
+imap CC <Esc>:s/^\/\/ //<Enter><S-a>
 imap <Tab> <C-t>
 imap <S-Tab> <C-d>
 imap { {}<Left>
@@ -27,8 +27,8 @@ imap {} {}
 imap <A-Space> <space>
 
 nmap yy :%y+<CR>
-nmap ff :s/^/\/\/ /<Enter>
-nmap FF :s/^\/\/ //<Enter>
+nmap cc :s/^/\/\/ /<Enter>
+nmap CC :s/^\/\/ //<Enter>
 
 autocmd filetype cpp imap <C-c> <Esc>:w <bar> !g++ -std=c++14 % -o %:r -Wall -O2<CR>
 autocmd filetype cpp imap <C-x> :!./%:r<CR>
